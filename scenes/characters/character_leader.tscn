@@ -1,0 +1,15 @@
+[gd_scene load_steps=5 format=3 uid="uid://lov2qkixgw05"]
+
+[ext_resource type="PackedScene" uid="uid://b01k2jxa1wsdx" path="res://scenes/characters/character.tscn" id="1_fn05t"]
+[ext_resource type="Script" path="res://scenes/characters/character_leader.gd" id="2_2u60y"]
+[ext_resource type="Texture2D" uid="uid://de7tcwyhaal82" path="res://assets/sprites/cultist3.png" id="2_6mjka"]
+[ext_resource type="Texture2D" uid="uid://dgh7tf3c3c2mv" path="res://assets/sprites/lider.png" id="2_7e4em"]
+
+[node name="CharacterLeader" instance=ExtResource("1_fn05t")]
+script = ExtResource("2_2u60y")
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource("2_6mjka")
+
+[node name="Portrait" parent="." index="1"]
+texture = ExtResource("2_7e4em")

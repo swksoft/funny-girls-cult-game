@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cy82uejlw11t4"]
+
+[ext_resource type="Texture2D" uid="uid://dwsk7ae8l42xq" path="res://assets/sprites/anotheritems1.png" id="1_gudio"]
+
+[node name="Statue" type="Sprite3D"]
+billboard = 2
+texture_filter = 0
+texture = ExtResource("1_gudio")

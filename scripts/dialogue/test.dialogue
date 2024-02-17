@@ -1,0 +1,11 @@
+~ example_dialog
+
+Joder, me gustaría volar.
+Pero no puedo.
+Ojalá alguien me pudiera ayudar.
+
+=> END
+
+~ default
+Ouch!
+=> END

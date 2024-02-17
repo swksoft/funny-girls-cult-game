@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dc2t4vmyy4agu"]
+
+[ext_resource type="Texture2D" uid="uid://djkkwp5sbbpog" path="res://assets/tileset/texture_large_atlas2.png" id="1_p2lwv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h6umo"]
+transparency = 1
+albedo_texture = ExtResource("1_p2lwv")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_s7kcg"]
+lightmap_size_hint = Vector2i(7, 7)
+size = Vector2(1, 1)
+
+[node name="Picture" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 2, 0, 0)
+material_override = SubResource("StandardMaterial3D_h6umo")
+cast_shadow = 0
+mesh = SubResource("PlaneMesh_s7kcg")

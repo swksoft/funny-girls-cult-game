@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bw5yac5nosarg"]
+
+[ext_resource type="Texture2D" uid="uid://cyw28lwx3anhs" path="res://assets/sprites/burger.png" id="1_47fon"]
+
+[node name="Borger" type="Sprite3D"]
+billboard = 2
+texture_filter = 0
+texture = ExtResource("1_47fon")

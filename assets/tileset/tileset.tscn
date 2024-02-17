@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bygtor315a045"]
+
+[ext_resource type="PackedScene" uid="uid://dbh3t8jehli7i" path="res://assets/tileset/texturemaps.glb" id="1_jwgxf"]
+
+[node name="tileset" instance=ExtResource("1_jwgxf")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)

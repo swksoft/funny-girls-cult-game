@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cumg4tm0wcauf"]
+
+[ext_resource type="Texture2D" uid="uid://diwsb31t4lqx2" path="res://icon.svg" id="1_63jtu"]
+[ext_resource type="Script" path="res://scripts/interactive.gd" id="1_bnkls"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eidfm"]
+size = Vector3(2, 2, 2)
+
+[node name="Interactive" type="Area3D"]
+script = ExtResource("1_bnkls")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+texture = ExtResource("1_63jtu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_eidfm")

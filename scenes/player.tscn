@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0cf7dd8lsk2"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_08n5r"]
+[ext_resource type="PackedScene" uid="uid://cjj3gvaak8s62" path="res://scenes/hud.tscn" id="2_cqcqt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wsb1d"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vuvs6"]
+
+[node name="Player" type="CharacterBody3D" groups=["Player"]]
+motion_mode = 1
+slide_on_ceiling = false
+script = ExtResource("1_08n5r")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_wsb1d")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+fov = 80.0
+
+[node name="RaycastForward" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+target_position = Vector3(0, -1.5, 0)
+collide_with_areas = true
+
+[node name="RaycastBackwards" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+target_position = Vector3(0, 1.5, 0)
+collide_with_areas = true
+debug_shape_custom_color = Color(0.929412, 0.666667, 0, 1)
+
+[node name="HUD" parent="." instance=ExtResource("2_cqcqt")]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+light_color = Color(0.529412, 0.317647, 0.294118, 1)
+light_energy = 10.547
+spot_range = 256.0
+spot_angle = 44.05
+
+[node name="Check" type="Area3D" parent="."]
+
+[node name="CheckCollision" type="CollisionShape3D" parent="Check"]
+shape = SubResource("BoxShape3D_vuvs6")
+
+[connection signal="move_backwards" from="HUD" to="." method="_on_hud_move_backwards"]
+[connection signal="move_forward" from="HUD" to="." method="_on_hud_move_forward"]
+[connection signal="turn_left" from="HUD" to="." method="_on_hud_turn_left"]
+[connection signal="turn_right" from="HUD" to="." method="_on_hud_turn_right"]
+[connection signal="body_entered" from="Check" to="." method="_on_check_body_entered"]

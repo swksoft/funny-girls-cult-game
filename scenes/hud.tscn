@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjj3gvaak8s62"]
+
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_efm8u"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_efm8u")
+metadata/_edit_horizontal_guides_ = [120.0]
+metadata/_edit_vertical_guides_ = [160.0]
+
+[node name="AreaForward" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="AreaForward"]
+modulate = Color(1, 0.137255, 0.443137, 1)
+polygon = PackedVector2Array(0, 0, 320, 0, 160, 120)
+
+[node name="AreaLeft" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="AreaLeft"]
+modulate = Color(0.713726, 0.678431, 0, 1)
+polygon = PackedVector2Array(160, 120, 0, 0, 0, 240)
+
+[node name="AreaRight" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="AreaRight"]
+modulate = Color(0.713726, 0.678431, 0, 1)
+polygon = PackedVector2Array(160, 120, 320, 0, 320, 239)
+
+[node name="AreaBackwards" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="AreaBackwards"]
+modulate = Color(0, 0.941176, 0.647059, 1)
+polygon = PackedVector2Array(160, 120, 0, 240, 320, 240)
+
+[connection signal="input_event" from="AreaForward" to="." method="_on_area_forward_input_event"]
+[connection signal="input_event" from="AreaLeft" to="." method="_on_area_left_input_event"]
+[connection signal="input_event" from="AreaRight" to="." method="_on_area_right_input_event"]
+[connection signal="input_event" from="AreaBackwards" to="." method="_on_area_backwards_input_event"]

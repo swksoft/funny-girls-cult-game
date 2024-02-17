@@ -1,0 +1,15 @@
+[gd_scene load_steps=5 format=3 uid="uid://dgujd3svhx2at"]
+
+[ext_resource type="PackedScene" uid="uid://b01k2jxa1wsdx" path="res://scenes/characters/character.tscn" id="1_7o3w1"]
+[ext_resource type="Script" path="res://scenes/characters/character_mariapaula.gd" id="2_vifvu"]
+[ext_resource type="Texture2D" uid="uid://cc0h3f30m1dxl" path="res://assets/sprites/cultist1.png" id="2_yl3gl"]
+[ext_resource type="Texture2D" uid="uid://c4o0rnjh6qus5" path="res://assets/sprites/anabella.png" id="4_5imyj"]
+
+[node name="CharacterAnabella" instance=ExtResource("1_7o3w1")]
+script = ExtResource("2_vifvu")
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource("2_yl3gl")
+
+[node name="Portrait" parent="." index="1"]
+texture = ExtResource("4_5imyj")

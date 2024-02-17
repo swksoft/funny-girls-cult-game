@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://byw0j8vyrmhyh"]
+
+[ext_resource type="Texture2D" uid="uid://ja2ahnfncxlr" path="res://assets/sprites/anotheritems2.png" id="1_5fh7u"]
+
+[node name="Lamp" type="Sprite3D"]
+billboard = 2
+texture_filter = 0
+texture = ExtResource("1_5fh7u")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, 0)
+light_color = Color(0.529412, 0.317647, 0.294118, 1)
+light_energy = 2.933
+light_indirect_energy = 15.674
+light_volumetric_fog_energy = 14.106
+light_specular = 2.764
+omni_range = 7.112
+omni_shadow_mode = 0

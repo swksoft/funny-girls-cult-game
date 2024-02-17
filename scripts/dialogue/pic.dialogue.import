@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://cfdu0wh7do8ro"
+path="res://.godot/imported/pic.dialogue-dc0f1194ab561dac3651e61d166aa420.tres"
+
+[deps]
+
+source_file="res://scripts/dialogue/pic.dialogue"
+dest_files=["res://.godot/imported/pic.dialogue-dc0f1194ab561dac3651e61d166aa420.tres"]
+
+[params]
+
+defaults=true

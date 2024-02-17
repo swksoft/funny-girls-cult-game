@@ -1,0 +1,69 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="The Fifth Game of SwinkoSoft"
+run/main_scene="res://scenes/world.tscn"
+config/features=PackedStringArray("4.2", "GL Compatibility")
+run/max_fps=60
+config/icon="res://icon.svg"
+
+[autoload]
+
+DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+GLOBAL="*res://scripts/autoloads/global.gd"
+
+[dialogue_manager]
+
+general/balloon_path="res://addons/dialogue_manager/custom_balloon/balloon.tscn"
+general/states=["GLOBAL"]
+general/include_notes_in_translation_exports=true
+
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=240
+window/size/resizable=false
+window/size/window_width_override=1280
+window/size/window_height_override=960
+window/stretch/mode="viewport"
+
+[editor]
+
+export/convert_text_resources_to_binary=false
+version_control/plugin_name="Dialogue Manager"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+
+[input]
+
+click={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":1,"position":Vector2(183, 0),"global_position":Vector2(186, 32),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
+]
+}
+
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://scripts/dialogue/test.dialogue", "res://scripts/dialogue/main_dialogue.dialogue", "res://scripts/dialogue/test2.dialogue", "res://scripts/dialogue/object.dialogue", "res://scripts/dialogue/character.dialogue", "res://scripts/dialogue/pic.dialogue")
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=true
+textures/default_filters/anisotropic_filtering_level=0
+textures/decals/filter=0
+textures/light_projectors/filter=0
+environment/volumetric_fog/use_filter=0

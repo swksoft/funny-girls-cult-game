@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=3 uid="uid://b3wlh7n0jnnus"]
+
+[ext_resource type="PackedScene" uid="uid://b01k2jxa1wsdx" path="res://scenes/characters/character.tscn" id="1_eeanu"]
+[ext_resource type="Texture2D" uid="uid://3mhyujhbwyjt" path="res://assets/sprites/cultist2.png" id="2_7xybs"]
+[ext_resource type="Script" path="res://scenes/characters/character_minerva.gd" id="2_qmrtq"]
+[ext_resource type="Texture2D" uid="uid://byxi6wws2pog2" path="res://assets/sprites/minerva.png" id="3_6pgvw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xk61s"]
+size = Vector3(6, 2, 2)
+
+[node name="CharacterMinerva" instance=ExtResource("1_eeanu")]
+script = ExtResource("2_qmrtq")
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource("2_7xybs")
+
+[node name="Portrait" parent="." index="1"]
+texture = ExtResource("3_6pgvw")
+
+[node name="CollisionShape3D" parent="." index="2"]
+shape = SubResource("BoxShape3D_xk61s")

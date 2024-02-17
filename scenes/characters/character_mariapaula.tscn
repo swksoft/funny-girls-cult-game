@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=3 uid="uid://dblwymiy7sjdp"]
+
+[ext_resource type="PackedScene" uid="uid://b01k2jxa1wsdx" path="res://scenes/characters/character.tscn" id="1_jnlfp"]
+[ext_resource type="Texture2D" uid="uid://3mhyujhbwyjt" path="res://assets/sprites/cultist2.png" id="2_o1m3k"]
+[ext_resource type="Script" path="res://scenes/characters/character_anabella.gd" id="2_sa6mr"]
+[ext_resource type="Texture2D" uid="uid://c0hf0rujvg0fy" path="res://assets/sprites/maria_paula.png" id="4_gr72i"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f3hxw"]
+size = Vector3(6, 2, 2)
+
+[node name="CharacterMariapaula" instance=ExtResource("1_jnlfp")]
+script = ExtResource("2_sa6mr")
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource("2_o1m3k")
+
+[node name="Portrait" parent="." index="1"]
+texture = ExtResource("4_gr72i")
+
+[node name="CollisionShape3D" parent="." index="2"]
+shape = SubResource("BoxShape3D_f3hxw")

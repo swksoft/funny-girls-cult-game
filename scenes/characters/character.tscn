@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://b01k2jxa1wsdx"]
+
+[ext_resource type="Script" path="res://scenes/characters/character.gd" id="1_qpmod"]
+[ext_resource type="Texture2D" uid="uid://cilc7cp6ats8g" path="res://assets/sprites/cultist4.png" id="2_3n01b"]
+[ext_resource type="Texture2D" uid="uid://bm27fdvexwbki" path="res://assets/sprites/generic.png" id="3_u81m8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_46vcp"]
+size = Vector3(2, 2, 2)
+
+[node name="Character" type="Area3D"]
+script = ExtResource("1_qpmod")
+
+[node name="Sprite" type="Sprite3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+billboard = 2
+texture_filter = 0
+texture = ExtResource("2_3n01b")
+
+[node name="Portrait" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.8, 0)
+visible = false
+billboard = 2
+texture_filter = 0
+texture = ExtResource("3_u81m8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_46vcp")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

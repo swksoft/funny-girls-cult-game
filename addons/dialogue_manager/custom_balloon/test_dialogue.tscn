@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0vrb6gqqf8s8"]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/custom_balloon/dialogue_scene.gd" id="1_pvcay"]
+
+[node name="TestDialogue" type="Node2D"]
+script = ExtResource("1_pvcay")

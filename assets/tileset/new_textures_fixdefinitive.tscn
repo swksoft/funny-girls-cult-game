@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1llcps2qwu75"]
+
+[ext_resource type="PackedScene" uid="uid://3ss5npigx4pd" path="res://assets/tileset/new_texturesFIXDEFINITIVE.glb" id="1_3vext"]
+
+[node name="new_texturesFIXDEFINITIVE" instance=ExtResource("1_3vext")]

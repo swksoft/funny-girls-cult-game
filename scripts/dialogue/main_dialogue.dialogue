@@ -1,0 +1,32 @@
+~ test_characters
+
+anabella: Hey, soy Anabella. Y este es el texto más largo que se puede poner en pantalla con esta fuente. Increíble, verdad?
+eleonora: Hey! I'm Eleonora, good to see you. So, this is a english game, so don't forget to study english haha.
+generic: Soy genérico
+lider: soy la líder.
+maria_paula: soy maría paula.
+maria_pia: Ojojojojo.
+minerva: ola.
+monserrat: llegué.
+> Hola
+- Te gusta comer?
+	Pico
+- No te gusta comer
+	Pico2
+
+=> END
+
+~ default_wall
+> Ouch!
+=> END
+
+~ test_object
+Solo soy un objeto
+=> END
+
+~ get_item
+set items["Nothing"] = true
+set key_item = "nothing"
+> Obtuviste [{{key_item}}]
+
+=> END

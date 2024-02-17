@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfsp3fvphuokk"]
+
+[ext_resource type="PackedScene" uid="uid://bvii86jebrxjy" path="res://assets/tileset/new_textures.glb" id="1_ck3se"]
+
+[node name="new_textures" instance=ExtResource("1_ck3se")]

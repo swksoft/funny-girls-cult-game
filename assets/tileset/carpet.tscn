@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://crtwxqgpqn8t4"]
+
+[ext_resource type="Texture2D" uid="uid://ssq1nwx7ji6s" path="res://assets/tileset/texture_large_atlas1.png" id="1_8vu5b"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uisxv"]
+transparency = 1
+albedo_texture = ExtResource("1_8vu5b")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_s7kcg"]
+lightmap_size_hint = Vector2i(7, 7)
+size = Vector2(1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0qj3l"]
+
+[node name="Carpet" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_uisxv")
+cast_shadow = 0
+mesh = SubResource("PlaneMesh_s7kcg")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_0qj3l")
+disabled = true

@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bvhtxgkgeepu7"]
+
+[ext_resource type="Texture2D" uid="uid://diwsb31t4lqx2" path="res://icon.svg" id="1_47aiu"]
+[ext_resource type="Script" path="res://scripts/object.gd" id="1_btdxe"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hc8s5"]
+margin = 8.725
+size = Vector3(2, 2, 2)
+
+[node name="Object" type="Area3D" groups=["Object"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1)
+script = ExtResource("1_btdxe")
+obtainable = false
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+billboard = 2
+texture = ExtResource("1_47aiu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." groups=["Object"]]
+shape = SubResource("BoxShape3D_hc8s5")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
