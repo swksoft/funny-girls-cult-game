@@ -113,19 +113,6 @@ if character["eleonora"] or character["maria_paula"] or character["minerva"]:
 		> The guard returned to her post, leaving the Leader alone with her new furniture.
 		Leader: (I love my job).
 else:
-	lider: Sí... lo sé todo. Puedo visualizar todas tus acciones con solo mirarte. Todos tus éxitos y fracasos.
-	lider: Sin embargo, me sorprende no poder encontrar tus motivos.
-	lider: Nuestro poder parece darte completamente igual. Ni siquiera pareces estar interesado en mis chicas.
-	lider: ...
-	lider: Sería necio de mi parte dejarte deambulando por aquí, teniendo en cuenta lo que has causado.
-	lider: Así que te haré el favor de devolverte a tu mundo, espíritu.
-	lider: (Tienes suerte que no permitimos acabar con los de tu tipo).
-	lider: Para llevar a cabo el ritual, tendrás que mencionar mi nombre, como requisitos principal del conjuro.
-	lider: Su eficacia dependerá de tu respuesta.
-	lider: Y no, lastimosamente no te lo puedo decir. Deberás determinarlo tú mismo, espíritu.
-	lider: Si necesitas alguna pista, solo puedo decirte lo siguiente:
-	lider: Comprende la primera sílaba de mi mano derecha, la última de mi mano izquierda y la primera de aquella cuyo amor por su compañera no es mútuo.
-	
 	Leader: Yes... I know everything. It only takes a look at you and I can see all your successes and failures.
 	Leader: However, I can't seem to find your motives.
 	Leader: Our power seems to mean nothing to you. You don't even seem interested in my girls.
@@ -167,13 +154,14 @@ lider: ¡¡¡Pipiripapipopiporopiropipipopiporipipi!!!
 ## ANABELLA DIALOGS ## NICE
 ######################
 ~ anabella_dialog_main
-anabella: (Oh, mierda. Perdí contacto con el espíritu).
-anabella: (Creí que con lo que estudié no tendría problemas a la hora de invocar. Esto no es justo).
-anabella: (Todo culpa de ese manual, se nota que está incompleto. Si tan solo tuviera en mis manos su versión alternativa...)
-anabella: (Dicen que hasta te enseña a invocar a Cthulhu).
+anabella: (Damn, I lost contact with the spirit).
+anabella: (With all my studying I shouldn't have trouble invoking. This isn't fair).
+> The young girl seems too inexperienced to notice your presence.
+anabella: (All because of that manual, it's obvious it's incomplete. If only I had the alternative version in my hands...)
+anabella: (They say it even teaches you how to summon Cthulhu. How cool is that?)
 anabella: (...)
-anabella: (No pasa nada, tocará hacerlo de nuevo. Después de todo, nadie parece darse cuenta de mi error).
-anabella: (Aunque... será cuestión de tiempo hasta que mi mentora lo descubra y se enoje conmigo otra vez...)
+anabella: (Well, I'll do it again. After all, no one seems to have notice yet).
+anabella: (Although... it's only a matter of time until my mentor finds out and gets mad at me again...)
 => END
 
 ######################
@@ -181,153 +169,160 @@ anabella: (Aunque... será cuestión de tiempo hasta que mi mentora lo descubra 
 ######################
 ~ eleonora_dialog_main
 eleonora: (Grrr...)
-eleonora: Llevo media hora esperando a esa estúpida.
-eleonora: ¡¡¡MARÍA PÍA, APÚRATE DE UNA JODIDA VEZ!!!
-eleonora: (Esta es la mía).
-eleonora: (Finalmente, luego de cuatro derrotas le podré cerrar la boca a todos aquí).
-eleonora: (No dejaré que esa idiota me arruine mi momento de gloria).
-> La pequeña está demasiado perdida en sus pensamientos como para notar tu presencia.
-eleonora: Soy mayor que todas ustedes, pedazos de mierda inmunda.
-eleonora: ...
-eleonora: ¿Eh? ¿Por qué me miran así?
-eleonora: (Debí haberlo imaginado...)
+eleonora: (I've been waiting for that stupid girl for half an hour).
+eleonora: MARIA PIA, HURRY UP FOR ONCE, GODDAMN IT!!!
+> There are girls playing poker in a room, but it seems one of the players is absent.
+eleonora: (She doesn't know this is my time to shine).
+eleonora: (Finally, after four defeats, I'll be able to shut everyone up here).
+eleonora: (I won't let that idiot ruin my moment of glory).
+> The little girl is too lost in her thoughts to notice your presence.
+Eleonora: I'm older than all of you, you pieces of shit!
+Eleonora: ...
+Eleonora: Why are you all looking at me like that?
+Eleonora: (I could've sworn...)
 => END
 ~ eleonora_dialog_cards
-eleonora: ...
-eleonora: Ya, me estoy cansando, voy a buscar a la idiota.
-> Antes de partir, miró las cartas de su compañera que se ubicaban en su mesa, solo para percatarse que ya no estaban.
-eleonora: Hey, juraría que....
-eleonora: ¡¡¡¡¡¡¡¡¡¡¡¡¡MARÍA PIAAAAAAAAAAAAAAAAAAAAAAA!!!!!!!!!!!!!!!!
-> Luego de un par de minutos de discusión, ambas regresaron a sus asientos.
-maria_pia: Yaaaaa, no te enojes así.
-eleonora: Ya callate de una vez, o me harás sentir peor.
-maria_pia: ...
-eleonora: ¡¿Qué esperas?! Es tu turno.
-maria_pia: Jiji, cierto.
-eleonora: ...
-eleonora: (Llegó la hora, coloquen sus cartas y admiren como las convierto en mis perras)
-maria_pia: Llevaba rato que no me tocaba una escalera.
-eleonora: ...
-eleonora: (Oh no...)
-eleonora: (Oh no, oh no, oh no, oh no, oh no, oh no, oh no, oh no, oh no, oh no, oh no)
-eleonora: ¡MIERDA!
-eleonora: Se pueden ir al carajo todas ustedes, especialmente tú, María Pía.
-> Dicho esto, abandonó la sala y abandonó el lugar por la puerta trasera.
-maria_pia: Que mala perdedora es, aún tenía posibilidades de ganar.
-maria_pia: ¿Por cierto, por qué se fue?
-> Provocaste que una cultista abandonara su grupo.
+Eleonora: ...
+Eleonora: Alright, I'm going to find that idiot before losing my patience.
+> Before leaving, she glanced at her companion's cards on the table, only to realize they were no longer there.
+Eleonora: Hey...
+Eleonora: MARÍA PIAAAAAAAAAAAAAAAAAAAAAAA!!!!!!!!
+> In a split second, she went out and came back dragging Maria Pia by the ears.
+> After a couple of minutes of argument, they both returned to their seats.
+Maria_Pia: Geez, don't get so mad, honey.
+Eleonora: Just shut up already, or you'll make me feel even worse.
+Maria_Pia: ...
+Eleonora: What are you waiting for?! It's your turn.
+Maria_Pia: Hehe, sorry, my bad.
+Eleonora: ...
+Eleonora: (It's time, lay down your cards and watch how I turn all of you into my bitches)
+Maria_Pia: Hehe, been a while since I had a Royal Flush.
+Eleonora: ...
+Eleonora: (Oh no...)
+Eleonora: (Oh no, oh no, oh no, oh no, oh no, oh no, oh no, oh no, oh no, oh no, oh no)
+Eleonora: DAMN IT!
+Eleonora: Screw all of you, especially you, Maria Pia.
+> With that said, she stormed out of the room and left through the back door.
+Maria_Pia: She's such a sore loser, she still had a chance to win. I guess.
+maria_pia: Wait for me, honeeeey!!
+> You caused a cultist to leave the group.
 => END
 
 #########################
 ## MARIA PAULA DIALOGS ## FUNCA
 #########################
 ~ mariapaula_dialog_main
-maria_paula: Tengo hambre...
-maria_paula: ...
-maria_paula: ...
-maria_paula: Sigo con hambre
-maria_paula: ...
-maria_paula: (Aún no acaba mi turno).
-maria_paula: ...
-maria_paula: ...
-maria_paula: ...
-maria_paula: (Tengo hambre y estoy aburrida)
-> La hambruna privaba a la jóven enfocarse lo suficiente en percibir tu presencia.
-maria_paula: (Tengo hambre, estoy aburrida y aquella chica no para de mirarme)
-maria_paula: (Por su culpa jamás podré comer, la líder me dijo que esperara a que desocupen ese lugar)
-maria_paula: (Nosotras deberíamos ir a comer primero, no por nada estamos en la élite)
-maria_paula: ¿... Verdad?
-minerva: ¿Eh?
-maria_paula: Digo lo mismo.
-minerva: Eh... okay.
+> You cannot advance because of a barrier created by the guardians, presumably.
+Maria_Paula: I'm hungry...
+Maria_Paula: ...
+Maria_Paula: ...
+Maria_Paula: I'm still hungry.
+Maria_Paula: ...
+Maria_Paula: (My turn isn't over yet).
+Maria_Paula: ...
+Maria_Paula: ...
+Maria_Paula: ...
+Maria_Paula: (I'm hungry and bored)
+> Hunger prevented the woman from focusing enough to perceive your presence.
+Maria_Paula: (I'm hungry, bored, and that girl in the table won't stop staring at me)
+Maria_Paula: (Because of her, I'll never get to eat. Instead, I have to wait until they vacate that place. Missy's orders.)
+Maria_Paula: (We should be the ones to eat first, we're in the elite for a reason)
+Maria_Paula: Right?
+Minerva: Huh?
+Maria_Paula: I agree.
+Minerva: Uh... okay.
 => END
 
 ~ mariapaula_dialog_apple
-maria_paula: (¿Qué creen? Todavía sigo con hambre)
-> Dejaste rodar una manzana en el piso hasta hacer contacto con el pie de la guardiana.
+Maria_Paula: (What do you think? I'm still hungry)
+> You let an apple roll on the floor until it made contact with the guard's foot.
 maria_paula: Oh.
-maria_paula: ¿Será esto obra de nuestra Diosa todopoderosa?
-> Con toda la seriedad del mundo, mordió del fruto prohibido entre lágrimas.
-maria_paula: (Lamento cuestionar su juicio, líder)
-maria_paula: (Usted solo nos da los peores desafíos porque somos sus mejores guerreras)
-minerva: ¡Pssst, hey! Que no se puede comer en horas de trabajo.
-> La jóven hizo caso omiso a la advertencia de su compañera.
+maria_paula: Could this be the work of our almighty Goddess?
+> She took a bite of the forbidden fruit amidst tears.
+maria_paula: (I apologize for questioning your judgment, Missy)
+maria_paula: (You only give us the toughest challenges because we're your best warriors)
+minerva: Psst, hey! You can't eat during work hours.
+> The young woman ignored her companion's warning.
+> You made the guard happy, but how can that help you?
 ## Softlock
 => END
 ~ mariapaula_dialog_dinnertime
-maria_paula: ... Finalmente... Mi turno.
-> Sin pensarlo dos veces, dejó caer su equipamiento para dirigirse al comedor.
+maria_paula: ... Finally... My turn.
+> Without a second thought, she dropped all her equipment and headed to the dining hall.
 => END
 ~ mariapaula_dialog_while_dinner
-> Al llegar, finamente se sentó a por fín descansar sus piernas luego de estar seis horas de pie.
+> Upon arrival, she finally sat down to rest her legs after standing still for six hours.
 if items["Apple"]:
-	> La espera había valido la pena. O al menos eso pensaba, porque en la larga mesa donde celebraban banquetes de vez en cuando, estaba completamente vacía.
+	> The wait had been worth it. Or at least that's what she thought, because on the long table where banquets were occasionally held, it was completely empty.
 	maria_paula: ...
 	maria_paula: ...
 	maria_paula: ...
 	maria_paula: ...
-	> Dejando intacta sus pertenencias, se levantó de su lugar y se dirigió hacia la puerta trasera del establecimiento sin largar una sola palabra de su boca.
+	> Leaving her belongings untouched, she rose from her seat and headed towards the back door of the establishment without uttering a single word.
 	maria_paula: ...
-	> Provocaste que una cultista abandonara su grupo.
+	> You caused a cultist to leave the group.
 else:
-	> La espera había valido la pena. O al menos eso pensaba, porque en la larga mesa donde celebraban banquetes de vez en cuando, estaba completamente vacía.
-	> ... A excepción de una manzana.
+	> The wait had been worth it. Or at least that's what she thought, because on the long table where banquets were occasionally held, it was completely empty.
+	> except for an apple..
 	maria_paula: ...
-	> Luego de devorar la manzana de un solo bocado, regresó a su puesto, callada.
+	> After devouring the apple in one bite, she returned to her post in silence.
 	maria_paula: Aahhh~
 => END
 ~ mariapaula_dialog_itsover
-maria_paula: ¿De qué sirve vivir?
+maria_paula: ¿What's the point of living?
+minerva: You okay?
 => END
 #######################
-## MARIA PIA DIALOGS ##
+## MARIA PIA DIALOGS ##  HASTA AQUI LLEVO TRADUCI2
 #######################
 ~ mariapia_dialog_main
-maria_pia: Mmm...
-maria_pia: Hmmm, mmm, mmmm.
-maria_pia: Está muy bueno. Digo, no tanto comparado a lo que comemos en casa, pero se le acerca.
-> Encontraste a una cultista que come como bestia. Parece estar lo suficientemente distraida como para no lograr percibirte.
-maria_pia: Hey, tú. ¿Te vas a comer eso?
-maria_pia: (Así que estas son las "hamburguesas", quién lo diría. La plebe también sabe lo que es bueno)
-maria_pia: ¡Ojojojojo-!
-> Entre risa y risa, notó que era observada por alguien a lo lejos.
-maria_pia: (María Paula no deja de mirarme, me da un poco de miedo)
-maria_pia: (Seguro también tiene hambre. Espero tenga un poco más de paciencia, porque aún no me siento satisfecha)
-maria_pia: (Mi amada también ha de estar esperándome, a todo esto)
-maria_pia: (...)
-maria_pia: Hey, tú. La del shampoo barato, ¿te vas a terminar eso?
-> Al no tener más opción, la jóven procedió a darle de su ración.
+Maria_Pia: Mmm...
+Maria_Pia: Hmm, mmm, mmmm.
+Maria_Pia: This is pretty good. I mean, not as good as what we eat at home, but good enough.
+> You found a cultist eating like a beast. She seems distracted enough not to notice you.
+Maria_Pia: (So these are the "burgers," who would've thought. The common folk also know what's good)
+Maria_Pia: Hehehe!
+> Amidst laughter, she noticed someone watching her from afar.
+Maria_Pia: (Maria Paula keeps staring at me, it's kind of scary)
+Maria_Pia: (She's probably hungry too. I hope she has a little more patience, because I'm still not satisfied)
+Maria_Pia: (My beloved must be waiting for me too, by the way)
+Maria_Pia: (...)
+Maria_Pia: Hey, you. The one who uses the cheap shampoo, are you going to finish that?
+> With no other option, the girl proceeded to give her a portion of her ration.
 => END
 
 ~ mariapia_dialog_cards
-> Con cautela, colocas las cartas en el bolsillo de la cultista.
-maria_pia: (Mmm... mmm...)
-maria_pia: (Sigue mirándome, zorra, tu odio no evitará que gane más dinero que tú en todo un año)
-> Escondiste las cartas con éxito.
+> Cautiously, you place the cards in the cultist's pocket.
+Maria_Pia: (Mmm... mmm...)
+Maria_Pia: (Keep staring at me, bitch, your hatred won't stop me from earning more money than you in a whole year)
+> You successfully hid the cards.
 => END
 
 #####################
 ## MINERVA DIALOGS ## ( FUNCIONA )
 #####################
 ~ minerva_dialog_main
-minerva: (Llevo aquí desde las ocho de la mañana)
-minerva: (Generalmente me mandan a asistir a las nuevas discípulas, pero no, aquí estoy)
-> La guardiana está tan aburrida que ni siquiera tu propia presencia es capaz de entretenerla
-minerva: (Sé que no debería quejarme de las ordenes de la líder, pero es que no tengo madera de guardia)
-minerva: (La que está a mi lado tampoco, cabe aclarar)
-minerva: (Me cuesta interactuar con ella, por no decir que no le gusta la magia tanto como yo)
-minerva: (Por suerte las nuevas si tienen un poco más de pasión por ello, Juana, Martina, incluso Anabella, la rebelde).
-minerva: (A veces me vuelve loca, pero me gusta su determinación)
-minerva: (Nada más no debí contarle sobre el rumor del manual alternativo. Seguro ha de estar pensando en ello en estos momentos, la muy curiosa)
-minerva: Ha...
-minerva: Ojalá tener ese libro para al menos tener algo con que distraerme.
+> You cannot advance because of a barrier created by the guardians, presumably.
+Minerva: (I've been here since eight in the morning)
+Minerva: (Usually they send me to assist the new disciples, but no, here I am)
+> The guardian is so bored that not even your presence can entertain her.
+Minerva: (I know I shouldn't complain about the leader's orders, but I'm just not cut out for guard duty)
+Minerva: (The one next to me isn't either, something worth mentioning)
+Minerva: (Interact with her it's too hard, not to mention she doesn't like magic as much as I do. Booooring-)
+Minerva: (Luckily, the newcomers have a bit more passion for it. Juana, Martina, even Anabella, the problem child).
+Minerva: (She drives me crazy sometimes, but I admire her dedication)
+Minerva: (I just shouldn't have told her about the rumor of the alternative manual. She's probably thinking about it right now. How adorable.)
+Minerva: (She's just like me when I joined. Except for being a total troublesome).
+Minerva: *Sigh*...
+Minerva: I wish I had that book just to have something to distract myself with.
 => END
 
 ~ minerva_dialog_hammer
-minerva: ¿Eh?
-minerva: ¿Y esto?
-minerva: (Ese martillo me suena de algo. Quizás la líder sepa que hacer)
-> La guardiana confiscó el martillo.
+Minerva: Huh?
+Minerva: What's this?
+Minerva: (That hammer sounds familiar. Maybe the leader knows what to do)
+> The guardian confiscated the hammer.
+> Perhaps you shouldn't have done that.
 ## Softlock
 => END
 
@@ -355,62 +350,86 @@ minerva: ... Me imagino que aún puedes entender lo que pienso. Lo lamento, no p
 minerva: Resulta ser que... invocar a Cthulhu no es posible.
 minerva: Ah, y dile a la líder que renuncio.
 > Provocaste que una cultista abandonara su grupo.
-{{GLOBAL.character["minerva"] = false}}
+> You leave the book on the floor, waiting for the guardian to notice it.
+Minerva: ...
+Minerva: Hey, that's...
+Minerva: I recognize an alternative manual when I see one!
+Minerva: Is this your doing, kind spirit? Yes, of course it is.
+Minerva: If you needed my attention, you could just talk to me. But thank you anyway.
+Minerva: As a token of gratitude, I'll let you speak with the leader. It's not normal for a spirit to be wandering around the establishment. You must be desperate to return to your world.
+Minerva: Follow me, buddy.
+> Before you could even depart, a sheet fell from inside the book.
+Minerva: Oops! What's this...
+Minerva: "The Ultimatum of the Valkyries Movement (do not open)"?
+Minerva: "This message is written in case...", "I would like to clarify that...", "that's why, on the 18th of the month..."
+> The guardian couldn't believe what she was reading. Whatever was written in that paper didn't seem to be good news.
+Minerva: ... Oh my.
+Minerva: ......
+Minerva: ...
+Minerva: (Everyone must know about this)
+Minerva: (I feel like such a fool)
+Minerva: ... 'suppose you can understand what I'm thinking. Sorry, before helping you, there's something I have to take care of first.
+Minerva: You've got to be kidding... she lied about summoning Cthulhu too.
+Minerva: Tell the leader that I quit.
+> You caused a cultist to leave her group.
+set character["minerva"] = false
 => END
 
 #######################
-## MONSERRAT DIALOGS ##
+## MONSERRAT DIALOGS ## AQUI VOY EN TRADUCCION PRECOZ
 #######################
 ~ monserrat_dialog_main
-monserrat: ¡¡Protegiendo, PROTEGIENDO!!
-monserrat: Me encanta proteger, todos están a salvo gracias a moi. También me encanta saber que hago mucho más que María Paula por el grupo.
-monserrat: La, lala, lala. P-R-O-T-E-G-I-E-N-D-O.
-monserrat: Aunque esta es la vigésimo novena vez que Monserrat canta esa canción y aún no ocurre nada.
-monserrat: La amada líder me aseguró que Monserrat era la más adecuada para ese tipo de situaciones.
-monserrat: Las masas ignorantes no entienden que somos su única esperanza para cambiar este mundo carcomido por la corrupción y la caca.
-monserrat: Por eso, yo, Monserrat, daré mi mejor esfuerzo día a día para proteger este lugar de sueños y esperanza.
-monserrat: ¡Diez hurras por la líder!
-monserrat: ¡Hurra!
-monserrat: ¡Hurra!
-monserrat: ¡Hurra!
-monserrat: ¡Hurra!
-monserrat: ¡Hur-, hey! ¿Hola pequeño espíritu, acaso perdiste a tu mami?
-monserrat: Pues no temas, tu madre seguramente haya sido víctima de este podrido mundo, pero para eso estamos nosotros.
-monserrat: Para quitar esa corrupción y llenarlas de AMOR.
-monserrat: Yo te daré amor, mi querido espíritu. YO PUEDO SER TU MADRE, aunque no sé si podría amamantarte. ¡QUE SUCIO ERES POR PENSAR EN ESO!
-monserrat: ¡¡¡TeOdioTeOdioTeOdioTeOdioTeOdioTeOdioTeOdioTeOdioTeOdioTeOdioTeOdioTeOdioTeOdio!!!!
-monserrat: ¿Acaso te mandó María Paula para molestarme? ¡¡INCONCEBIBLE!! Usando su puesto para fastidiar a los menos afortunados... ¡Cuánta osadía!"
-monserrat: Mira, mi amigo, si lo que quieres es descansar en paz, aquí está la salida.
-monserrat: ¿Que estás esperando,? vete yendo.
+Monserrat: Protecting, PROTECTING!!
+Monserrat: I love protecting the entrance, everyone is safe thanks to moi. I also love knowing that I do much more for the group than Maria Paula.
+Monserrat: DID YOU HEAR THAT? THAT WAS DIRECTED TO YOU.
+> No response.
+Monserrat: La, lala, lala. P-R-O-T-E-C-T-I-N-G.
+Monserrat: Although this is the twenty-ninth time that Monserrat sings that song and still nothing happens.
+Monserrat: The beloved leader assured me that Monserrat was the most suitable for that kind of situation.
+Monserrat: The ignorant masses don't understand that we are their only hope to change this world corroded by corruption and poop.
+Monserrat: That's why, I, Monserrat, will give my best effort day by day to protect this place of hopes and dreams.
+Monserrat: Hooray for the leader!
+Monserrat: Hooray!
+Monserrat:        Hooray!
+Monserrat: Hooray!
+Monserrat:        Hooray!
+Monserrat: Hoor- hey! Hello little spirit, did you lose your mommy?
+> The eccentric woman appears to have easily recognized you..
+Monserrat: Well, don't worry, your mother surely fell victim to this rotten world, but that's what we're here for.
+Monserrat: To rid it of corruption and fill it with LOVE.
+Monserrat: Monserrat will give you love, my dear spirit. I CAN BE YOUR MOTHER, although I'm not sure if I could breastfeed you. HOW DARE YOU THINK OF THAT!
+Monserrat: Screw you, screw you, screw you, screw you, screw you, screw you!!!!
+Monserrat: Did María Paula send you to annoy me? UNTHINKABLE!! Using her position to bother the less fortunate... How dare she!
+Monserrat: Look, my friend, if what you want is to rest in peace, here is the way out.
+Monserrat: Whatcha waiting for? Just go.
 => END
 ## Hacerle caso provocará un Game Over. Pero sirve como una introducción hacia la salida al exterior, un espacio que reseteará el progreso ante cualquier equivocación.
 ~ monserrat_dialog_mariapaula
-monserrat: Hey, hey, hey, hey. Que te he visto.
-monserrat: Eso ha sido muy astuto, mi querido espíritu, y te lo estoy diciendo yo: la favorita de nuestra amada líder.
-monserrat: Yo por ella meto las manos en el fuego, escalo el Everest, viajo por todo el sistema solar caminando.
-monserrat: ... ¡Hasta me desnudaría! Solo que no lo voy a hacer porque esto es una Jam para todo público.
-monserrat: Lo que tú has hecho, sin embargo, fue digno de alguien que apoya las ideas de nuestro grupo que busca revolucionar el planeta.
-monserrat: Por eso, estoy a tu merced, soy tuya.
-monserrat: ¡No en ese sentido! Yo soy de nuestra amada líder. Me refería a que me puedes preguntar lo que necesites.
-- Ninguna duda:
-	monserrat: ¡Entonces déjame trabajar, menos bla bla y más pun pun!
-- Acerca del manual alternativo:
+Monserrat: Yo, big guy. I've got my eye on you. What you've done to Maria Paula was... EPIC!
+Monserrat: I'm serious, that was quite clever.
+Monserrat: As you know, I love the leader: I would go to great lengths for her, I'd climb the Everest, I'd travel across the entire solar system on foot.
+Monserrat: ...I'd even strip down for her! But I won't because this is a family-friendly Game Jam.
+Monserrat: What you've done, however, was worthy of someone who supports the ideas of our group aiming to revolutionize the planet.
+Monserrat: That's why I'm at your service, I'm yours.
+Monserrat: Not in that way! This body belongs to our beloved leader. You can ask me anything you need, that's what Monserrat meant.
+- Nothing to ask:
+	monserrat: Then let me work, less chit-chat and more action!
+- About the Alternative Manual:
 	set lamp_secret = true
-	monserrat: ¡¿QueQueQué?! 
-	monserrat: ¿Cómo una dulce doncella como yo va a saber sobre eso?
-	monserrat: Pues claro que lo sé, como mano derecha de mi amada líder debemos estar en la misma página, en completa armonía.
-	monserrat: Una vez se lo quité de su biblioteca para hojearlo pero eso hizo enojar a la dulce líder por alguna razón y es por eso que Monserrat está aquí.
-	monserrat: Para que no lo volviera a hacer, lo escondió por algún lado.
-	monserrat: ¡Pero hey! Recuerda: "Completa armonía". Si mi dulce ama sabe algo, ¡entonces yo también,! así que una noche me escondí debajo de su cama y la escuché contarle a María Paula que lo dejó en la pared oculta.
-	monserrat: Y... eso es todo lo que sé... ¡Lo siento! Si tienes alguna duda se lo puedes preguntar a ella.
-	monserrat: ¡Ah, cierto que hiciste que se fuera! Esto es complicado...
-	monserrat: Bueno, me imagino que si se lo dijo a ella será porque lo escondió en algun lugar cerca suyo.
-	monserrat: Espero haber sido de ayuda, chaíto~
+	Monserrat: What?! How is a sweet maiden like me supposed to know about that?
+	Monserrat: Ha! Of course I know, as the right hand of my beloved leader, we must be on the same page, in complete harmony.
+	Monserrat: In fact, I took it from her library to flip through it one time, but that angered the sweet leader for some reason. That's why Monserrat is here.
+	Monserrat: To prevent myself from doing it again, she hid it somewhere.
+	Monserrat: But hey! Remember: "Complete harmony." If my sweet mistress knows something, then so do I! So one night I hid under her bed and listened to her telling María Paula that she left it in a "hidden wall", whatever that means.
+	Monserrat: And... that's all I know... Sorry! If you have any doubts, you can ask her.
+	Monserrat: Oh, right, you made her leave! How inconvenient...
+	Monserrat: Well, I suppose if she told her, it's because she hid it somewhere near her.
+	Monserrat: I hope I've been helpful, bye bye~
 if hammer:
-	- Acerca del martillo:
-		monserrat: ¿Martillo? Monserrat no recuerda haber oído hablar de ningún martillo.
-		monserrat: No creo que ninguna miembro te pueda ayudar al respecto.
-		monserrat: ¿Espera... me estás tomando por tonta? Que sepas que Monserrat no es ninguna tonta, espíritu.
-		monserrat: Ahora vete, porque no me dejas ver a mi amada líder desde aquí.
-		monserrat: Sí, me molestas por más que seas transparente.
+	- About the hammer:
+		Monserrat: A hammer? Monserrat doesn't recall hearing about any hammer.
+		Monserrat: Nobody here could help you about that.
+		Monserrat: Wait... are you trying to play me for a fool? Just so you know, Monserrat is no fool, spirit.
+		Monserrat: Now go, because you're preventing me from seeing my beloved leader from here.
+		Monserrat: Yes, you bother me even though you're transparent.
 => END

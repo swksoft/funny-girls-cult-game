@@ -135,10 +135,10 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4, 1, -22)
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4, 1, -10)
 
 [node name="Lamp20" parent="Deco" instance=ExtResource("6_mq5fa")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 24, 1, 0)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 24, 1, 2)
 
 [node name="Lamp21" parent="Deco" instance=ExtResource("6_mq5fa")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 14, 1, 0)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 16, 1, 2)
 
 [node name="Lamp22" parent="Deco" instance=ExtResource("6_mq5fa")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 16, 1, 14)
