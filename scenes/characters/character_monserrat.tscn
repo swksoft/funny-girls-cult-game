@@ -3,13 +3,13 @@
 [ext_resource type="PackedScene" uid="uid://b01k2jxa1wsdx" path="res://scenes/characters/character.tscn" id="1_rbac5"]
 [ext_resource type="Script" path="res://scenes/characters/character_monserrat.gd" id="2_kg8t3"]
 [ext_resource type="Texture2D" uid="uid://pv5ueh7cks1m" path="res://assets/sprites/monserrat.png" id="2_npp6c"]
-[ext_resource type="Texture2D" uid="uid://cc0h3f30m1dxl" path="res://assets/sprites/cultist1.png" id="2_v63oc"]
+[ext_resource type="Texture2D" uid="uid://bfkvk2rgpm27i" path="res://assets/sprites/characters/cultist1.png" id="3_sv5d2"]
 
 [node name="CharacterMonserrat" instance=ExtResource("1_rbac5")]
 script = ExtResource("2_kg8t3")
 
 [node name="Sprite" parent="." index="0"]
-texture = ExtResource("2_v63oc")
+texture = ExtResource("3_sv5d2")
 
 [node name="Portrait" parent="." index="1"]
 texture = ExtResource("2_npp6c")

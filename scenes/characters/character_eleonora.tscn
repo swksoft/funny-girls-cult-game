@@ -2,14 +2,14 @@
 
 [ext_resource type="PackedScene" uid="uid://b01k2jxa1wsdx" path="res://scenes/characters/character.tscn" id="1_tyyfa"]
 [ext_resource type="Script" path="res://scenes/characters/character_eleonora.gd" id="2_hpd60"]
-[ext_resource type="Texture2D" uid="uid://3mhyujhbwyjt" path="res://assets/sprites/cultist2.png" id="2_ovd2n"]
+[ext_resource type="Texture2D" uid="uid://nsc847rmxoga" path="res://assets/sprites/characters/cultist2.png" id="3_cq5gr"]
 [ext_resource type="Texture2D" uid="uid://c7df3qcqmqjk0" path="res://assets/sprites/eleonora.png" id="3_flmkj"]
 
 [node name="CharacterEleonora" instance=ExtResource("1_tyyfa")]
 script = ExtResource("2_hpd60")
 
 [node name="Sprite" parent="." index="0"]
-texture = ExtResource("2_ovd2n")
+texture = ExtResource("3_cq5gr")
 
 [node name="Portrait" parent="." index="1"]
 texture = ExtResource("3_flmkj")
