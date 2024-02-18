@@ -342,7 +342,7 @@ motion_mode = 0
 [node name="Reset" parent="." instance=ExtResource("25_33iif")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2, 1, -35)
 
-[node name="Borger" type="Node" parent="."]
+[node name="Borger" type="Node3D" parent="."]
 
 [node name="Borger" parent="Borger" instance=ExtResource("32_dnvq5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.4, 1, -3.5)

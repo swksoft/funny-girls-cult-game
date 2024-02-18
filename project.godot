@@ -20,11 +20,12 @@ config/icon="res://icon.svg"
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 GLOBAL="*res://scripts/autoloads/global.gd"
+TransitionLayer="*res://scripts/autoloads/transition_layer.tscn"
 
 [dialogue_manager]
 
 general/balloon_path="res://addons/dialogue_manager/custom_balloon/balloon.tscn"
-general/states=["GLOBAL"]
+general/states=["GLOBAL", "TransitionLayer"]
 general/include_notes_in_translation_exports=true
 
 [display]

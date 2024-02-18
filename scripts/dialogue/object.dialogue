@@ -20,7 +20,7 @@ I'm just an object, as you can see.
 
 => END
 
-~ lamp
+~ torch
 if lamp_secret:
 	> After looking closely, you notice that the lamp has a cavity with a switch.
 	*CLACK*

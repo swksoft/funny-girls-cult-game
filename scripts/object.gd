@@ -8,6 +8,8 @@ signal open_secret
 @export var obtainable: bool = true
 @export var sprite_texture: Resource = preload("res://icon.svg")
 
+var one_time = true
+
 @onready var sprite = $Sprite3D
 
 func dialog_end():
@@ -15,7 +17,7 @@ func dialog_end():
 	
 func interaction():
 	if !obtainable:
-		DialogueManager.show_dialogue_balloon(load("res://scripts/dialogue/object.dialogue"), "lamp")
+		DialogueManager.show_dialogue_balloon(load("res://scripts/dialogue/object.dialogue"), "torch")
 		emit_signal("open_secret")
 	else:
 		DialogueManager.show_dialogue_balloon(load("res://scripts/dialogue/object.dialogue"), "get_item")

@@ -12,4 +12,5 @@ script = ExtResource("2_d0405")
 texture = ExtResource("2_xj6ua")
 
 [node name="Portrait" parent="." index="1"]
+visible = true
 texture = ExtResource("3_0vfry")

@@ -39,8 +39,8 @@ func movement_process(action, dir):
 func wall_ahead(raycast):
 	if raycast.is_colliding():
 		var collider = raycast.get_collider()
-		print(collider)
-		print(collider.is_in_group("Wall"))
+		#print(collider)
+		#print(collider.is_in_group("Wall"))
 		return collider.is_in_group("Wall")
 	return false
 	#return raycast.get_collider() == GridMap
@@ -52,7 +52,6 @@ func interact(type_entity: String):
 		"character":
 			pass
 		"wall":
-			print("pico")
 			DialogueManager.show_example_dialogue_balloon(load("res://scripts/dialogue/main_dialogue.dialogue"), "default_wall")
 			_move("backwards")
 			var tween = get_tree().create_tween().set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)

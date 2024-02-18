@@ -2,7 +2,7 @@ extends Character
 
 signal minerva_out
 
-func _process(delta):
+func _process(_delta):
 	if GLOBAL.character["minerva"]:
 		pass
 	else:

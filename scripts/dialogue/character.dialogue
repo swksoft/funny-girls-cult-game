@@ -54,84 +54,66 @@ if character["eleonora"] or character["maria_paula"] or character["minerva"]:
 	*FIIIIIUUUUUUUUUUUUUUUUUUUUUM*
 	if character["eleonora"]:
 		> An impaling bolt rendered you unconscious, leaving the entire room covered in ashes.
-		Leader: I was talking to him, you know?
+		Lider: I was talking to him, you know?
 		Eleonora: That scum made me lose my poker game, as far as I'm concerned, he can eat shit.
-		Leader: You know we can't treat spirits like that.
+		Lider: You know we can't treat spirits like that.
 		Eleonora: Don't care.
-		Leader: ... Just leave.
+		Lider: ... Just leave.
 		Eleonora: On my way.
-		Leader: (It can't be helped).
+		lider: (It can't be helped).
 	elif character["maria_paula"]:
 		> A piercing lightning bolt made you explode, leaving the entire room covered in debris.
-		Leader: *Cough* *cough*
-		Leader: Mari... *cough*
+		Lider: *Cough* *cough*
+		Lider: Mari... *cough*
 		Maria_Paula: Come again, missy?
-		Leader: You blew up the entire facility, you fuck-face!!
+		Lider: You blew up the entire facility, you fuck-face!!
 		Maria_Paula: Don't worry, missy. I took care of that intruder who was threatening your life.
-		Leader: LOOK, EVERYTHING IS SCREWED UP!!!
+		Lider: LOOK, EVERYTHING IS SCREWED UP!!!
 		Maria_Paula: Don't get mad, missy, it's bad for your health.
-		Leader: ... Just get out.
+		Lider: ... Just get out.
 		Maria_Paula: Alright, but can I come back tomorrow?
-		Leader: ... no.
+		Lider: ... no.
 		## Resetea la partida desde 0
 	elif character["minerva"]:
-		> De un segundo al otro, te quedaste inmóvil.
-		lider: ...
-		lider: Bien hecho.
-		minerva: Gracias, líder. ¿Qué haremos con él?
-		lider: ¿Podrías esperar a que se descongele y llevarlo a otro mundo?
-		minerva: Eh... lo dudo. Una vez descongelado experimentará malestares que acabarán en su muerte.
-		lider: ¿Qué? ¿Los espíritus pueden morir de nuevo?
-		minerva: Claro, líder. Acaban en un lugar aún peor.
-		lider: Oh... que mal.
-		minerva: No me quedaba de otra, lo siento.
-		lider: Está bien, al menos no lo mataste "ya".
-		minerva: Sí, cierto.
-		lider: Entonces no dejes que se descongele, podrías meternos en problemas.
-		minerva: Entendido, todos los días verificaré su estado.
-		lider: Gracias. ¿Ahora podrías regresar a tu puesto?
-		minerva: Sí, lider.
-		> La guardia regresó a su puesto, dejándo a la líder con su nuevo mueble a solas.
-		lider: (Como me encanta mi trabajo).
 		## Resetea la partida desde 0
 		> In the blink of an eye, you stood completely still.
-		Leader: ...
-		Leader: Well done.
+		Lider: ...
+		Lider: Well done.
 		Minerva: Thank you, Ma'am. What shall we do with him?
-		Leader: Could you wait for him to thaw and then take him to another world?
+		Lider: Could you wait for him to thaw and then take him to another world?
 		Minerva: Uh... don't think so. Once thawed, he'll experience discomfort that will end in his death.
-		Leader: Huh? Spirits can die twice?
+		Lider: Huh? Spirits can die twice?
 		Minerva: Of course. They end up in an even worse place.
-		Leader: That's... unfortunate.
+		Lider: That's... unfortunate.
 		Minerva: I'm sorry, Ma'am.
-		Leader: Don't worry, at least is "alive".
+		Lider: Don't worry, at least is "alive".
 		Minerva: Yeah, true.
-		Leader: Keep him like this, that way we can't get us into trouble.
+		Lider: Keep him like this, that way we can't get us into trouble.
 		Minerva: Understood, I'll check his status every day.
-		Leader: Thank you. Now, Could you now return to your post?
+		Lider: Thank you. Now, Could you now return to your post?
 		Minerva: Yes, Ma'am.
 		> The guard returned to her post, leaving the Leader alone with her new furniture.
-		Leader: (I love my job).
+		Lider: (I love my job).
 else:
-	Leader: Yes... I know everything. It only takes a look at you and I can see all your successes and failures.
-	Leader: However, I can't seem to find your motives.
-	Leader: Our power seems to mean nothing to you. You don't even seem interested in my girls.
-	Leader: ...
-	Leader: Considering what you've caused, it would be foolish of me to let you wander around here like nothing happened.
-	Leader: So, I'll do you the favor of sending you back to your world, spirit.
-	Leader: (You're lucky we don't kill the ones of your kind).
-	Leader: To carry out the ritual, you'll need to mention my name, as the main requirement of the spell.
-	Leader: Its effectiveness depends fully on your response.
-	Leader: And no, there won't be any help of my part...
-	Leader: except for the main clue:
-	Leader: "Includes the first syllable of my right hand, the last of my left hand, and the first of she whose love for her mate is not mutual."
+	Lider: Yes... I know everything. It only takes a look at you and I can see all your successes and failures.
+	Lider: However, I can't seem to find your motives.
+	Lider: Our power seems to mean nothing to you. You don't even seem interested in my girls.
+	Lider: ...
+	Lider: Considering what you've caused, it would be foolish of me to let you wander around here like nothing happened.
+	Lider: So, I'll do you the favor of sending you back to your world, spirit.
+	Lider: (You're lucky we don't kill the ones of your kind).
+	Lider: To carry out the ritual, you'll need to mention my name, as the main requirement of the spell.
+	Lider: Its effectiveness depends fully on your response.
+	Lider: And no, there won't be any help of my part...
+	Lider: except for the main clue:
+	Lider: "Includes the first syllable of my right hand, the last of my left hand, and the first of she whose love for her mate is not mutual."
 	- El, Mi, La => leader_dialog_incorrect_answer
 	- A, Mi, El => leader_dialog_incorrect_answer
 	- An, Mon, Mar => leader_dialog_incorrect_answer
 	- Ma, Mi, La => leader_dialog_incorrect_answer
 	- Mi, El, La => leader_dialog_correct_answer
 	- Ma, Ma, Pia => leader_dialog_incorrect_answer
-{{reset()}}
+set change_scene("res://scenes/world.tscn")
 => END
 
 ~ leader_dialog_incorrect_answer
@@ -139,7 +121,7 @@ lider: I'm sorry, spirit. But that's not the answer I was looking for.
 lider: Don't get sad, we can try something else.
 ## Te resetea la partida desde cero.
 lider: ¡¡¡Pipiripapipopiporopiropipipopiporipipi!!!
-{{reset()}}
+set change_scene("res://scenes/world.tscn")
 => END
 
 ~ leader_dialog_correct_answer
@@ -147,7 +129,7 @@ lider: ... Alright. Get ready.
 lider: Return from thy world at once, cause no further trouble here, I implore thee.
 lider: ¡¡¡Pipiripapipopiporopiropipipopiporipipi!!!
 ## Una luz te ilumina y muestra el título del juego con los créditos
-{{end_game()}}
+set change_scene("res://scenes/world.tscn")
 => END
 
 ######################
@@ -206,6 +188,7 @@ Eleonora: Screw all of you, especially you, Maria Pia.
 Maria_Pia: She's such a sore loser, she still had a chance to win. I guess.
 maria_pia: Wait for me, honeeeey!!
 > You caused a cultist to leave the group.
+set character["Eleonora"] = false
 => END
 
 #########################
@@ -327,29 +310,6 @@ Minerva: (That hammer sounds familiar. Maybe the leader knows what to do)
 => END
 
 ~ minerva_dialog_manual
->Dejas el libro en el suelo, esperando a que la guardiana lo note.
-minerva: ...
-minerva: Hey, eso es...
-minerva: ¡Oh! Se reconocer un manual alternativo cuando lo veo.
-minerva: ¿Es esto obra tuya, amable espíritu? Sí, claro que lo es.
-minerva: Si necesitabas mi atención, no hacía falta que hicieras esto por mí. Pero muchas gracias de todas formas.
-minerva: Como agradecimiento, te dejaré hablar con la líder. No es normal que un espíritu ande merodeando por el establecimiento. Debes estar desesperado por regresar a tu mundo.
-minerva: Sígueme, amiguín.
-> Antes de siquiera poder partir, una hoja cayó del interior del libro.
-minerva: Oh, vaya. ¡Ups!
-minerva: ¿"El Ultimátum del Movimiento Valquirias (no abrir)"?
-minerva: "Este mensaje está escrito por si...", "quisiera aclarar que...", "por eso, el día 18 del mes..."
-> La guardiana no podía creer lo que estaba leyendo. Sea lo que sea que contuviera ese papel, no parecían ser buenas noticias.
-minerva: ... Oh cielos.
-minerva: ......
-minerva: ...
-minerva: (Todas deben saber esto)
-minerva: (No puedo creer que haya perdido tanto tiempo de mi vida en causas tan banales).
-minerva: (Me siento como una estúpida)
-minerva: ... Me imagino que aún puedes entender lo que pienso. Lo lamento, no puedo ayudarte, tengo que encargarme de algo primero.
-minerva: Resulta ser que... invocar a Cthulhu no es posible.
-minerva: Ah, y dile a la líder que renuncio.
-> Provocaste que una cultista abandonara su grupo.
 > You leave the book on the floor, waiting for the guardian to notice it.
 Minerva: ...
 Minerva: Hey, that's...
@@ -425,11 +385,11 @@ Monserrat: Not in that way! This body belongs to our beloved leader. You can ask
 	Monserrat: Oh, right, you made her leave! How inconvenient...
 	Monserrat: Well, I suppose if she told her, it's because she hid it somewhere near her.
 	Monserrat: I hope I've been helpful, bye bye~
-if hammer:
-	- About the hammer:
-		Monserrat: A hammer? Monserrat doesn't recall hearing about any hammer.
-		Monserrat: Nobody here could help you about that.
-		Monserrat: Wait... are you trying to play me for a fool? Just so you know, Monserrat is no fool, spirit.
-		Monserrat: Now go, because you're preventing me from seeing my beloved leader from here.
-		Monserrat: Yes, you bother me even though you're transparent.
+#if items["hammer"]:
+- About the hammer [if items["Hammer"]]:
+	Monserrat: A hammer? Monserrat doesn't recall hearing about any hammer.
+	Monserrat: Nobody here could help you about that.
+	Monserrat: Wait... are you trying to play me for a fool? Just so you know, Monserrat is no fool, spirit.
+	Monserrat: Now go, because you're preventing me from seeing my beloved leader from here.
+	Monserrat: Yes, you bother me even though you're transparent.
 => END
