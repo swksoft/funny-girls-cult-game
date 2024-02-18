@@ -2,6 +2,7 @@ extends Character
 
 signal mariapaula_go
 signal burger_dissapear
+signal apple_dissapear
 
 var mariapaula_move = false
 var itsover = false
@@ -24,8 +25,9 @@ func reaction():
 				interaction("mariapaula_dialog_while_dinner")
 				queue_free()
 			else:
-				## DESAPARECER MANZANA
+				emit_signal("apple_dissapear")
 				interaction("mariapaula_dialog_while_dinner")
 				global_position = Vector3(1,1.25,25)
+				itsover = true
 	else:
 		interaction("mariapaula_dialog_itsover")

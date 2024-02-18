@@ -11,19 +11,20 @@ metadata/_edit_vertical_guides_ = [160.0]
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="AreaForward"]
 modulate = Color(1, 0.137255, 0.443137, 1)
-polygon = PackedVector2Array(0, 0, 320, 0, 320, 25, 160, 139, 0, 25)
+polygon = PackedVector2Array(0, 0, 320, 0, 160, 126)
 
 [node name="AreaLeft" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="AreaLeft"]
 modulate = Color(0.713726, 0.678431, 0, 1)
-polygon = PackedVector2Array(0, 25, 160, 139, 160, 148, 0, 232)
+polygon = PackedVector2Array(0, 0, 160, 126, 0, 240)
 
 [node name="AreaRight" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="AreaRight"]
 modulate = Color(0.713726, 0.678431, 0, 1)
-polygon = PackedVector2Array(160, 148, 320, 232, 320, 25, 160, 139)
+position = Vector2(0, -18)
+polygon = PackedVector2Array(320, 258, 320, 18, 160, 144)
 
 [node name="AreaBackwards" type="Area2D" parent="."]
 
@@ -31,7 +32,7 @@ polygon = PackedVector2Array(160, 148, 320, 232, 320, 25, 160, 139)
 modulate = Color(0, 0.941176, 0.647059, 1)
 position = Vector2(0, 72)
 scale = Vector2(1, 0.697917)
-polygon = PackedVector2Array(160, 108.896, 0, 229.254, 0, 240, 320, 240, 320, 229.254)
+polygon = PackedVector2Array(160, 77.3731, 0, 240.716, 320, 240.716)
 
 [connection signal="input_event" from="AreaForward" to="." method="_on_area_forward_input_event"]
 [connection signal="input_event" from="AreaLeft" to="." method="_on_area_left_input_event"]

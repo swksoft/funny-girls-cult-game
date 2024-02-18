@@ -61,6 +61,7 @@ if character["eleonora"] or character["maria_paula"] or character["minerva"]:
 		Lider: ... Just leave.
 		Eleonora: On my way.
 		lider: (It can't be helped).
+		set change_scene("res://scenes/world.tscn")
 	elif character["maria_paula"]:
 		> A piercing lightning bolt made you explode, leaving the entire room covered in debris.
 		Lider: *Cough* *cough*
@@ -73,6 +74,7 @@ if character["eleonora"] or character["maria_paula"] or character["minerva"]:
 		Lider: ... Just get out.
 		Maria_Paula: Alright, but can I come back tomorrow?
 		Lider: ... no.
+		set change_scene("res://scenes/world.tscn")
 		## Resetea la partida desde 0
 	elif character["minerva"]:
 		## Resetea la partida desde 0
@@ -94,6 +96,7 @@ if character["eleonora"] or character["maria_paula"] or character["minerva"]:
 		Minerva: Yes, Ma'am.
 		> The guard returned to her post, leaving the Leader alone with her new furniture.
 		Lider: (I love my job).
+		set change_scene("res://scenes/world.tscn")
 else:
 	Lider: Yes... I know everything. It only takes a look at you and I can see all your successes and failures.
 	Lider: However, I can't seem to find your motives.
@@ -139,11 +142,12 @@ set change_scene("res://scenes/world_end.tscn")
 anabella: (Damn, I lost contact with the spirit).
 anabella: (With all my studying I shouldn't have trouble invoking. This isn't fair).
 > The young girl seems too inexperienced to notice your presence.
-anabella: (All because of that manual, it's obvious it's incomplete. If only I had the alternative version in my hands...)
+anabella: (All because of that manual, I think. There's an alternative version of it. But...)
+anabella: (I think Minerva would make better use of it).
 anabella: (They say it even teaches you how to summon Cthulhu. How cool is that?)
 anabella: (...)
 anabella: (Well, I'll do it again. After all, no one seems to have notice yet).
-anabella: (Although... it's only a matter of time until my mentor finds out and gets mad at me again...)
+anabella: (Although... it's only a matter of time until Minerva finds out and gets mad at me again...)
 => END
 
 ######################
@@ -187,6 +191,7 @@ Eleonora: Screw all of you, especially you, Maria Pia.
 > With that said, she stormed out of the room and left through the back door.
 Maria_Pia: She's such a sore loser, she still had a chance to win. I guess.
 maria_pia: Wait for me, honeeeey!!
+maria_pia: Eleonora, my beloved, come here!!
 > You caused a cultist to leave the group.
 set character["eleonora"] = false
 => END
@@ -217,7 +222,7 @@ Minerva: Uh... okay.
 => END
 
 ~ mariapaula_dialog_apple
-Maria_Paula: (What do you think? I'm still hungry)
+Maria_Paula: (Starving...)
 > You let an apple roll on the floor until it made contact with the guard's foot.
 maria_paula: Oh.
 maria_paula: Could this be the work of our almighty Goddess?
@@ -230,7 +235,7 @@ minerva: Psst, hey! You can't eat during work hours.
 ## Softlock
 => END
 ~ mariapaula_dialog_dinnertime
-maria_paula: ... Finally... My turn.
+maria_paula: ... Finally... my turn.
 > Without a second thought, she dropped all her equipment and headed to the dining hall.
 => END
 ~ mariapaula_dialog_while_dinner
@@ -321,7 +326,7 @@ Minerva: As a token of gratitude, I'll let you speak with the leader. It's not n
 Minerva: Follow me, buddy.
 > Before you could even depart, a sheet fell from inside the book.
 Minerva: Oops! What's this...
-Minerva: "The Ultimatum of the Valkyries Movement (do not open)"?
+Minerva: "The Ultimatum of the Valkyries Movement (do not open, especially you, my loyal servants Maria Paula and Minerva)"?
 Minerva: "This message is written in case...", "I would like to clarify that...", "that's why, on the 18th of the month..."
 > The guardian couldn't believe what she was reading. Whatever was written in that paper didn't seem to be good news.
 Minerva: ... Oh my.
@@ -391,6 +396,6 @@ Monserrat: Not in that way! This body belongs to our beloved leader. You can ask
 	Monserrat: A hammer? Monserrat doesn't recall hearing about any hammer.
 	Monserrat: Nobody here could help you about that.
 	Monserrat: Wait... are you trying to play me for a fool? Just so you know, Monserrat is no fool, spirit.
-	Monserrat: Now go, because you're preventing me from seeing my beloved leader from here.
+	Monserrat: Now go, because you're preventing me from seeing my beloved leader from here. 
 	Monserrat: Yes, you bother me even though you're transparent.
 => END

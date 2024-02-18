@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://bff23elin6qu7"]
+[gd_scene load_steps=35 format=3 uid="uid://bff23elin6qu7"]
 
 [ext_resource type="Script" path="res://scripts/world.gd" id="1_frgo1"]
 [ext_resource type="PackedScene" uid="uid://b0cf7dd8lsk2" path="res://scenes/player.tscn" id="1_ybyus"]
@@ -32,6 +32,7 @@
 [ext_resource type="Texture2D" uid="uid://ja2ahnfncxlr" path="res://assets/sprites/anotheritems2.png" id="21_wk7le"]
 [ext_resource type="PackedScene" uid="uid://2jktiosteo7e" path="res://scenes/reset.tscn" id="25_33iif"]
 [ext_resource type="PackedScene" uid="uid://bw5yac5nosarg" path="res://assets/tileset/borger.tscn" id="32_dnvq5"]
+[ext_resource type="AudioStream" uid="uid://btblevm55p1a5" path="res://assets/music/ph2il.ogg" id="33_d5ile"]
 
 [sub_resource type="Environment" id="Environment_6g3r6"]
 background_mode = 1
@@ -124,6 +125,7 @@ transform = Transform3D(-1.74846e-07, 4, -1.74846e-07, 0, -1.74846e-07, -4, -4, 
 
 [node name="Button" parent="Deco" instance=ExtResource("5_bl4a7")]
 transform = Transform3D(-1, 8.9407e-08, -2.66454e-15, 0, -4.37114e-08, -1, -8.9407e-08, -1, 4.37114e-08, 9, 2, 23.9)
+visible = false
 
 [node name="Lamp" parent="Deco" instance=ExtResource("6_mq5fa")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 24, 1, -12)
@@ -363,7 +365,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.6, 1, -8.9)
 [node name="Borger7" parent="Borger" instance=ExtResource("32_dnvq5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.4, 1.2, -8.9)
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("33_d5ile")
+volume_db = -4.727
+autoplay = true
+
 [connection signal="minerva_out" from="NPCs/CharacterMinerva" to="." method="_on_character_minerva_minerva_out"]
+[connection signal="apple_dissapear" from="NPCs/CharacterMariapaula" to="." method="_on_character_mariapaula_apple_dissapear"]
 [connection signal="burger_dissapear" from="NPCs/CharacterMariapaula" to="." method="_on_character_mariapaula_burger_dissapear"]
 [connection signal="mariapaula_go" from="NPCs/CharacterMariapaula" to="." method="_on_character_mariapaula_mariapaula_go"]
 [connection signal="mariapia_cards" from="NPCs/CharacterEleonora" to="." method="_on_character_eleonora_mariapia_cards"]
