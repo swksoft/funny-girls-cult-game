@@ -7,6 +7,7 @@ var mariapaula_move = false
 var itsover = false
 
 func reaction():
+	print(GLOBAL.character["eleonora"])
 	if !itsover:
 		if !mariapaula_move:
 			if !GLOBAL.character["eleonora"]:

@@ -188,7 +188,7 @@ Eleonora: Screw all of you, especially you, Maria Pia.
 Maria_Pia: She's such a sore loser, she still had a chance to win. I guess.
 maria_pia: Wait for me, honeeeey!!
 > You caused a cultist to leave the group.
-set character["Eleonora"] = false
+set character["eleonora"] = false
 => END
 
 #########################
@@ -244,6 +244,7 @@ if items["Apple"]:
 	> Leaving her belongings untouched, she rose from her seat and headed towards the back door of the establishment without uttering a single word.
 	maria_paula: ...
 	> You caused a cultist to leave the group.
+	set character["maria_paula"] = false
 else:
 	> The wait had been worth it. Or at least that's what she thought, because on the long table where banquets were occasionally held, it was completely empty.
 	> except for an apple..

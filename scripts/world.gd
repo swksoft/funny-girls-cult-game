@@ -1,5 +1,7 @@
 extends Node
 
+var one_time_lamp = true
+
 @onready var grid_secret = $GridSecret
 @onready var eleonora = $NPCs/CharacterEleonora
 @onready var mariapia = $NPCs/CharacterMariapia
@@ -7,16 +9,16 @@ extends Node
 @onready var mariapaula = $NPCs/CharacterMariapaula
 @onready var borger = $Borger
 
-
 func _ready():
 	GLOBAL.items = {"Apple": false, "Cards": false, "Hammer": false, "Manual": false, "Nothing": false}
 	GLOBAL.key_item = "Nothing"
-	GLOBAL.character = {"eleonora": true, "maria_paula": false, "minerva": true}
+	GLOBAL.character = {"eleonora": true, "maria_paula": true, "minerva": true}
 	GLOBAL.apple_given = false
 	GLOBAL.cards_given = false
 	GLOBAL.hammer_given = false
 	GLOBAL.manual_given = false
 	GLOBAL.lamp_secret = false
+	one_time_lamp = true
 	#print(GLOBAL.items)
 	#print(GLOBAL.key_item)
 	#print(GLOBAL.character)
@@ -26,8 +28,9 @@ func _ready():
 	#print_debug(GLOBAL.manual_given)
 
 func _on_torch_open_secret():
-	if GLOBAL.lamp_secret:
+	if GLOBAL.lamp_secret and one_time_lamp:
 		grid_secret.queue_free()
+		one_time_lamp = false
 	else:
 		pass
 
