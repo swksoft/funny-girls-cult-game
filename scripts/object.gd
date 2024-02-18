@@ -24,6 +24,7 @@ func interaction():
 			if GLOBAL.lamp_secret and one_time:
 				DialogueManager.show_dialogue_balloon(load("res://scripts/dialogue/object.dialogue"), "torch")
 				emit_signal("open_secret")
+				GLOBAL.lamp_secret = false
 			else:
 				DialogueManager.show_dialogue_balloon(load("res://scripts/dialogue/object.dialogue"), "torch")
 		else:
