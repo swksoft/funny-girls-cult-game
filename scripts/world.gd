@@ -17,8 +17,8 @@ func _ready():
 	GLOBAL.cards_given = false
 	GLOBAL.hammer_given = false
 	GLOBAL.manual_given = false
-	GLOBAL.lamp_secret = false
-	one_time_lamp = true
+	GLOBAL.lamp_secret = true
+	GLOBAL.pilar_secret = true
 	#print(GLOBAL.items)
 	#print(GLOBAL.key_item)
 	#print(GLOBAL.character)
@@ -28,11 +28,7 @@ func _ready():
 	#print_debug(GLOBAL.manual_given)
 
 func _on_torch_open_secret():
-	if GLOBAL.lamp_secret and one_time_lamp:
-		grid_secret.queue_free()
-		one_time_lamp = false
-	else:
-		pass
+	grid_secret.queue_free()
 
 func _on_character_eleonora_mariapia_cards():
 	eleonora.queue_free()

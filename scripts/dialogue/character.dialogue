@@ -113,7 +113,7 @@ else:
 	- Ma, Mi, La => leader_dialog_incorrect_answer
 	- Mi, El, La => leader_dialog_correct_answer
 	- Ma, Ma, Pia => leader_dialog_incorrect_answer
-set change_scene("res://scenes/world.tscn")
+#set change_scene("res://scenes/world.tscn")
 => END
 
 ~ leader_dialog_incorrect_answer
@@ -129,7 +129,7 @@ lider: ... Alright. Get ready.
 lider: Return from thy world at once, cause no further trouble here, I implore thee.
 lider: ¡¡¡Pipiripapipopiporopiropipipopiporipipi!!!
 ## Una luz te ilumina y muestra el título del juego con los créditos
-set change_scene("res://scenes/world.tscn")
+set change_scene("res://scenes/world_end.tscn")
 => END
 
 ######################

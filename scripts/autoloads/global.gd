@@ -8,6 +8,7 @@ var cards_given = false
 var hammer_given = false
 var manual_given = false
 var lamp_secret = false
+var pilar_secret = false
 
 func reset():
 	get_tree().reload_current_scene.call_deferred()

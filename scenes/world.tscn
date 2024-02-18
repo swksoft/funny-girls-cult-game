@@ -310,29 +310,27 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 1.25, -19)
 [node name="Apple" parent="Items" instance=ExtResource("4_amiih")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 1, -5)
 item_name = "Apple"
-obtainable = true
 sprite_texture = ExtResource("3_1tipj")
 
 [node name="Cards" parent="Items" instance=ExtResource("4_amiih")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 1.6, 12.4)
 item_name = "Cards"
-obtainable = true
 sprite_texture = ExtResource("4_c88pt")
 
 [node name="Hammer" parent="Items" instance=ExtResource("4_amiih")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 1, -17)
 item_name = "Hammer"
-obtainable = true
 sprite_texture = ExtResource("5_xfqk3")
 
 [node name="Manual" parent="Items" instance=ExtResource("4_amiih")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 1, 9)
 item_name = "Manual"
-obtainable = true
 sprite_texture = ExtResource("4_72w14")
 
 [node name="Torch" parent="Items" instance=ExtResource("4_amiih")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0.9, 19)
+item_name = "Torch"
+obtainable = false
 sprite_texture = ExtResource("21_wk7le")
 
 [node name="Player" parent="." instance=ExtResource("1_ybyus")]

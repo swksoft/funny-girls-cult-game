@@ -3,6 +3,7 @@
 if key_item == "Manual":
 	if items["Hammer"]:
 		set items[key_item] = true
+		
 		> It looks like there's something inside the pillar.
 		> You decide to break it with the hammer.
 		> You obtained [{{key_item}}].
@@ -12,6 +13,8 @@ if key_item == "Manual":
 	
 else
 	set items[key_item] = true
+	if key_item == "Hammer":
+		set pilar_secret = true
 	> You obtained [{{key_item}}].
 => END
 ~ interactive
